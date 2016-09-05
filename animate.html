@@ -31,6 +31,10 @@
       border-color: #fc605a transparent #fc605a #fc605a;
       border-radius: 25px;
       left: -25px;
+      -webkit-animation: rotate_up .5s 0s linear infinite;
+      -moz-animation: rotate_up .5s 0s linear infinite;
+      -ms-animation: rotate_up .5s 0s linear infinite;
+      -o-animation: rotate_up .5s 0s linear infinite;
       animation: rotate_up .5s 0s linear infinite;
     }
     .load-inner .sec {
@@ -42,6 +46,10 @@
       border-radius: 25px;
       left: -25px;
       margin-top: -50px;
+      -webkit-animation: rotate_down .5s 0s linear infinite;
+      -moz-animation: rotate_down .5s 0s linear infinite;
+      -ms-animation: rotate_down .5s 0s linear infinite;
+      -o-animation: rotate_down .5s 0s linear infinite;
       animation: rotate_down .5s 0s linear infinite;
     }
     .r1, .r2, .r3 {
@@ -53,32 +61,90 @@
       margin: 2px;
       left: 70px;
       top: 25px;
+      -webkit-transform: translate(0,-6.25px);
+      -moz-transform: translate(0,-6.25px);
+      -ms-transform: translate(0,-6.25px);
+      -o-transform: translate(0,-6.25px);
       transform: translate(0,-6.25px);
     }
     .r1 {
+      -webkit-animation: roll 1s -.66s linear infinite;
+      -moz-animation: roll 1s -.66s linear infinite;
+      -ms-animation: roll 1s -.66s linear infinite;
+      -o-animation: roll 1s -.66s linear infinite;
       animation: roll 1s -.66s linear infinite;
     }
     .r2 {
+      -webkit-animation: roll 1s -.33s linear infinite;
+      -moz-animation: roll 1s -.33s linear infinite;
+      -ms-animation: roll 1s -.33s linear infinite;
+      -o-animation: roll 1s -.33s linear infinite;
       animation: roll 1s -.33s linear infinite;
     }
     .r3 {
+      -webkit-animation: roll 1s 0s linear infinite;
+      -moz-animation: roll 1s 0s linear infinite;
+      -ms-animation: roll 1s 0s linear infinite;
+      -o-animation: roll 1s 0s linear infinite;
       animation: roll 1s 0s linear infinite;
     }
     @keyframes rotate_up{
       /*0%{transform: rotate(0);}
       100%{transform: rotate(-45deg);}*/
-      0%{-webkit-transform:rotate(270deg);transform:rotate(270deg)}
-      50%{-webkit-transform:rotate(360deg);transform:rotate(360deg)}
-      100%{-webkit-transform:rotate(270deg);transform:rotate(270deg)}
+      0%{
+        -webkit-transform:rotate(270deg);
+        -moz-transform:rotate(270deg);
+        -ms-transform:rotate(270deg);
+        -o-transform:rotate(270deg);
+        transform:rotate(270deg)
+      }
+      50%{
+        -webkit-transform:rotate(360deg);
+        -moz-transform:rotate(360deg);
+        -ms-transform:rotate(360deg);
+        -o-transform:rotate(360deg);
+        transform:rotate(360deg)
+      }
+      100%{
+        -webkit-transform:rotate(270deg);
+        -moz-transform:rotate(270deg);
+        -ms-transform:rotate(270deg);
+        -o-transform:rotate(270deg);
+        transform:rotate(270deg)
+      }
     }
     @keyframes rotate_down{
-      0%{-webkit-transform:rotate(90deg);transform:rotate(90deg)}
-      50%{-webkit-transform:rotate(0deg);transform:rotate(0deg)}
-      100%{-webkit-transform:rotate(90deg);transform:rotate(90deg)}
+      0%{
+        -webkit-transform:rotate(90deg);
+        -moz-transform:rotate(90deg);
+        -ms-transform:rotate(90deg);
+        -o-transform:rotate(90deg);
+        transform:rotate(90deg)
+      }
+      50%{
+        -webkit-transform:rotate(0deg);
+        -moz-transform:rotate(0deg);
+        -ms-transform:rotate(0deg);
+        -o-transform:rotate(0deg);
+        transform:rotate(0deg)
+      }
+      100%{
+        -webkit-transform:rotate(90deg);
+        -moz-transform:rotate(90deg);
+        -ms-transform:rotate(90deg);
+        -o-transform:rotate(90deg);
+        transform:rotate(90deg)
+      }
     }
     @keyframes roll{
       75%{opacity:.7}
-      100%{-webkit-transform:translate(-95px,-6.25px);transform:translate(-95px,-6.25px}
+      100%{
+        -webkit-transform:translate(-95px,-6.25px);
+        -moz-transform:translate(-95px,-6.25px);
+        -ms-transform:translate(-95px,-6.25px);
+        -o-transform:translate(-95px,-6.25px);
+        transform:translate(-95px,-6.25px)
+      }
     }
   </style>
 </head>
